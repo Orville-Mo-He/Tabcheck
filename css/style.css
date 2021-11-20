@@ -1,0 +1,795 @@
+
+:root, html{
+    height: 100%;
+    height: -webkit-fill-available;
+    font-size: 18px;
+    line-height: 1.33rem;
+    background-color: #fffefe;
+
+}
+
+h1, h2, h3, nav>ul>li>a, input, textarea, label{
+    color: #6B5B57;
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 400;
+}
+.displayNone{
+    display: none;
+}
+a {
+    color: #752C49;
+}
+
+h1 {
+    font-size: 2.369rem;
+}
+
+h2 {
+    font-size: 1.777rem
+}
+
+h3 {
+    font-size: 1.366rem;
+}
+.in_line_h{
+    font-weight: 700;
+    font-size: 1rem;
+}
+.caption{
+    /* font-style: italic; */
+    letter-spacing: .5px;
+    font-size: .75rem;
+    line-height: 1rem;
+
+}
+p, li, ol, ul {
+    font-size: 1rem;
+    font-family: adobe-garamond-pro, serif;
+    color: #6B5B57;
+    font-weight: 400;
+}
+p{
+    max-width: 90ch;
+}
+
+
+div{
+    background-color: white;
+}
+.container {
+    height: 100%;
+}
+
+
+
+
+#footer {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    background-color: #6B5B57;
+}
+
+footer>p {
+    color: white;
+    font-family: adobe-garamond-pro, serif;
+    font-size: .75rem;
+    letter-spacing: 1px;
+    max-width: 100%;
+}
+
+header {
+    background-color: #B8AAA0;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height:auto;
+}
+
+.MyInfo {
+    display: none;
+}
+
+nav {
+    top: 0;
+    position: sticky;
+    color: white;
+    flex-basis: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+}
+
+nav>ul>li>a:active {
+    text-decoration: underline;
+}
+
+#NavLogo {
+    align-self: center;
+    padding-left: 1rem;
+    justify-self: flex-start;
+    display: block;
+    height: fit-content;
+}
+
+#currentPage::after {
+    content: '   <'
+}
+
+#NavLogo img {
+    height: 7vh;
+}
+
+
+#BurgerMenu {
+    justify-self: flex-end;
+    padding: 15px 15px 15px 0;
+    text-decoration: none;
+    color: white;
+}
+
+#BurgerIcon {
+    display: block;
+}
+
+#CloseMenuIcon {
+    display: none;
+}
+
+#navlinks {
+
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    flex-basis: 100%;
+    justify-self: center;
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    /* background-color: darkgray; */
+    padding: 0 10vw;
+}
+
+#mainBody {
+    /* background-color: darkgrey; */
+    margin-top: 20vh;
+    padding: 0 5vw;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+
+main#mainBody.thepaper{
+    display: block;
+}
+
+
+main#mainBody.thepaper ol *{
+    list-style-type: decimal;
+    margin: 0 1.333rem;
+    max-width: 100%;
+    word-break: break-all;
+    padding-left: .333rem;
+}
+main#mainBody.thepaper ul *{
+    list-style-type: circle;
+    margin: 0 1.333rem;
+    max-width: 100%;
+    padding-left: .333rem;
+    word-break: break-all;
+}
+main#mainBody.thepaper ol, main#mainBody.thepaper ul{
+    margin-bottom: 1rem;
+}
+
+.nested{
+    margin-top: 1rem !important;
+}
+
+/* #mainBody .PageIntro {
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: column nowrap;
+} */
+
+.PageIntro {
+    margin-bottom: 3rem;
+}
+
+
+.PageIntro p {
+    line-height: 1.33rem;
+    padding: .2rem;
+    margin: 0 2rem
+}
+
+
+
+#PageTitle {
+    top: 50vh;
+    margin-bottom: .5rem;
+}
+
+#introOffset {
+    padding: 0;
+    line-height: 0rem;
+    text-indent: 2rem;
+}
+
+#hello {
+    font-family: adobe-garamond-pro, serif;
+    font-style: italic;
+    margin-top: 10vh;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+    margin-left: 2rem;
+    line-height: 2.2rem;
+
+}
+#home #mainBody .PageIntro .Home_intro_p{
+    margin-left: 2rem;
+
+}
+
+.Project_Highlights {
+    margin-top: 10vh;
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 100%;
+}
+
+.SectionHeader {
+    padding-right: 0;
+
+}
+
+.PapersSection {
+    border-bottom: 1px solid black;
+    margin-bottom: -.4rem;
+}
+
+.PapersSection>h2, .SectionHeader> h2 {
+    margin-bottom: -.39rem;
+}
+
+#viewalldes {
+    font-size: .75rem;
+}
+
+.section_divider {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    border-top: solid 1px #6B5B57;
+}
+
+li {
+    list-style-type: none;
+}
+
+.Project,
+.PapersList {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 6vh 0;
+}
+#adobe-dc-view{
+    width: 100%;
+}
+
+.Project_Highlights:nth-child(2) {
+    margin-top: 5vh;
+}
+.ArticleTitle{
+    font-size: 1.333rem;
+    padding: 1rem 0;
+}
+#mainBody.thepaper .back_to{
+    margin-top: 2rem;
+}
+.ArticleH1{
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem 0;
+
+}
+.ArticleH2{
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1rem;
+    padding: 1rem 0;
+}
+.projectIntro {
+    display: flex;
+    align-items: baseline;
+}
+
+.ProjectTitle,
+.PaperTitle {
+    padding-bottom: .66rem;
+    flex-basis: 100%;
+    padding-right: 1.777rem;
+}
+
+.thepaper p{
+    padding-bottom: 1rem;
+}
+
+
+.ProjectDescription {
+    padding-bottom: 1.66rem;
+    /* flex-shrink: 0; */
+}
+
+.viewProject {
+    line-height: 1.67rem;
+    flex-shrink: 0;
+}
+
+.ProjectImage {
+    display: block;
+    margin: 0 auto;
+    /* padding-left: 10vw; */
+    /* flex-basis: 100%; */
+    max-width: 100%;
+}
+
+.ProjectImageContainer {
+    align-self: center;
+}
+
+#untitledimg {
+    /* flex-basis: 100%; */
+    /* border-top: 1px solid black;
+    border-bottom: 1px solid black; */
+    background-color: rgb(29, 29, 29);
+    -moz-box-shadow: inset 0 0 20px #000000;
+    -webkit-box-shadow: inset 0 0 20px #000000;
+    box-shadow: inset 0 0 20px #000000;
+    align-self: center;
+    width: 100vw;
+}
+
+#untitledimg>img {
+
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    max-width: 80%;
+
+}
+
+.quick_info {
+    display: flex;
+    flex-direction: column;
+    margin-top: .66rem;
+    margin-left: .33rem;
+}
+/* .quick_info> li{
+    margin: .66rem
+} */
+.qi_label{
+    padding-top: 1.333rem;
+    margin-bottom: -.16rem;
+}
+.qi_underline{
+    border-top: solid 1px #6B5B5780;
+    margin: 0;
+}
+.clientSubBullet, .Team, .design_categorys{
+    margin-top: .66rem;
+    line-height: 1.33rem;
+
+    /* padding-bottom: .6rem; */
+}
+.boardered_img{
+    border: solid 1px #6B5B5780;
+}
+
+
+#Powing .ProjectTitle {
+    color: red;
+}
+
+#Powing .quick_info {
+    margin-top: 0;
+}
+
+#Powing .ProjectImage {
+    margin-bottom: 1.777rem;
+    padding-left: 0;
+    width: auto;
+    border: 1px solid darkgrey
+}
+
+#adobe-dc-view {
+    height: 90vh;
+}
+
+.Paperli {
+    text-indent: 1rem;
+}
+
+.PaperTopicList,
+.PaperCategory {
+    padding-top: 1rem;
+}
+
+#NavAid {
+
+    background-color: transparent;
+    position: fixed;
+    bottom: 50px;
+    left: 5vw;
+    display: none;
+    flex-flow: column wrap;
+}
+
+#NavAid img {
+    width: 50px;
+}
+
+
+.PaperTopicList {
+    padding-bottom: 1rem;
+}
+
+
+#about #mainBody{
+    margin-top: 0;
+}
+
+#about .PageIntro{
+    padding: 25vh 0 10% 0;
+    width: 100%;
+    align-self: center;
+    /* display: flex;
+    flex-flow: column nowrap; */
+
+    background-image: url("../assets/Home/SVG/Mountainous Logo Brown.svg");
+    background-attachment: scroll;
+    background-position: top 25vh center;
+    background-repeat: no-repeat;
+    background-size: 40vw;
+
+    height: 100%;
+
+}
+#aip{
+    margin: 50vw auto 0 ;
+
+    width: fit-content;
+}
+
+
+
+#about .PageIntro p{
+    padding:0;
+    margin: 0;
+    line-height: 1rem;
+}
+
+
+/* #createSpace{
+    height: 50%;
+} */
+
+#about .PageIntro #aip_l_1{
+    padding-left: 1rem;
+}
+#about .PageIntro #aip_l_2{
+    padding-left: 2rem;
+}
+#about .PageIntro #aip_l_3{
+    /* just here for clarity */
+    padding-left: 0
+}
+#about .PageIntro #aip_l_4{
+    padding-left: 1rem;
+}
+#about .PageIntro #aip_l_5{
+    font-weight: 700;
+    padding-left: 2.4rem;
+}
+.no_tm_hr{
+    margin-top: 0;
+}
+
+.no_bm_hr{
+    margin-bottom: 0;
+}
+#ContactForm{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    row-gap: 1rem;
+}
+#ContactForm form{
+    display: grid;
+    row-gap: .33rem;
+    grid-template-rows: repeat(9, auto);
+}
+input, textarea{
+    justify-self: stretch;
+    margin-bottom: 1rem;
+}
+label.label_supp{
+    font-size: .75rem;
+}
+#fsubmit{
+    background-color: white;
+    border-radius: 2px;
+    color:#B8AAA0;
+    border: solid 1px #B8AAA0;
+}
+#fsubmit:hover{
+
+
+    border-color:#6B5B57;
+    background-color:#6B5B57;
+    color: white;
+    border-radius: 3px;
+    /*
+    1px increase because darker color makes edge seem
+    sharper.
+    */
+}
+#about #mainBody{
+    row-gap: 0;
+}
+#monologue{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.33rem;
+}
+
+
+/*
+Okay so the BIG difference is that I need to change the nav to a horizontal one
+that is laid out already.
+    SO:
+        Navlinks should be displayed
+            navLinks should be row no wrap space between
+
+        both icons need to be hidden
+        the myInfo section needs to be hidden
+        The nav logo needs to be shown
+
+Next is the issue of each project needing to be remade:
+    Title and description need to be in one row
+    Second row needs to be image and quick info
+        This probably needs to be flex (or not)
+        photo on left, quickInfo on right.
+
+About me Page should be built at this point.
+*/
+
+@media screen and (min-width:850px) {
+
+    .container {
+        display: grid;
+        /* column-gap: 1rem; */
+        grid-template-rows: 3rem auto;
+        justify-items: center;
+        align-items: center;
+        justify-content: stretch;
+    }
+
+    #BurgerMenu {
+        display: none;
+    }
+
+    header {
+
+        height: 100%;
+        grid-row: 1 / span 1;
+        flex-direction: row;
+        align-items: center;
+
+    }
+
+    #nav {
+
+        /* width: 100%; */
+        height: 100%;
+        text-decoration: none;
+        display: grid;
+        grid-template-columns: 1fr 10fr 1fr;
+        column-gap: 2rem;
+        align-items: center;
+        /* justify-content: flex-end; */
+    }
+
+    #navlinks {
+
+        grid-column: 2;
+        margin: 0 auto;
+        flex-basis: auto;
+        padding: 0;
+        width: fit-content;
+        min-height: auto;
+        justify-self: flex-start;
+
+        display: flex;
+        flex-flow: row nowrap;
+        column-gap: 2rem;
+        justify-content: flex-start;
+        align-items: baseline;
+        row-gap: 1rem;
+    }
+    #navlinks > li{
+        width: fit-content;
+    }
+    #nav #navlinks .indvNavLink {
+        color: #eee4de;
+        font-size: 1rem;
+
+    }
+
+    #currentPage::after {
+        color: rgba(29, 29, 29, 0);
+        content: none;
+    }
+
+    #nav #navlinks #currentPage {
+        color: white;
+        text-decoration: underline solid white;
+        text-decoration-thickness: 2px;
+    }
+
+    #nav #navlinks .indvNavLink:hover,
+    #nav #navlinks #currentPage:hover {
+        text-decoration: underline;
+        color: white;
+        text-decoration-thickness: 3px;
+        font-size: 1.333rem;
+    }
+
+    #NavLogo{
+        grid-column: 1;
+    }
+    #NavLogo img{
+        height: 2.34rem;
+    }
+
+    #mainBody {
+        padding: 0 1rem;
+        width: auto;
+        grid-row: 2/ span 1;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1.77rem;
+    }
+
+
+
+
+
+    /*
+    Each project should be grid, grid-template-column: repeat(4, 1fr)
+    */
+
+    .Project,
+    .PapersList {
+        grid-column: 1 / span 1;
+        display: grid;
+        grid-template-columns: 2fr 1.5fr 1.5fr;
+        column-gap: 2rem;
+    }
+
+    .projectIntro{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem
+    }
+    .ProjectImageContainer {
+        grid-column: 2 / span 1;
+        align-self: baseline;
+
+    }
+
+    .ProjectImage {
+
+        display: inline;
+        margin: 0;
+        /* padding-left: 10vw; */
+        /* flex-basis: 100%; */
+        max-width: 100%;
+    }
+
+    #untitledimg {
+        width: auto;
+    }
+
+    #untitledimg>img {
+        margin: auto;
+        padding: 1rem;
+        max-width: 80%;
+        display: block;
+
+    }
+    .quick_info, #Powing .quick_info{
+        margin-top: -.666rem;
+        flex-wrap: wrap;
+        column-gap: 3rem;
+
+    }
+    .qi_underline{
+        max-width: 80%;
+    }
+    /* .Team > ul > li:first-child{
+        margin-bottom: .333rem;
+    } */
+    .clientSubBullet, .TeamMembers{
+        padding-left: 0;
+    }
+    .design_categorys, .PaperCategory{
+        padding-top: 0;
+    }
+
+
+    /*
+    Note that because I haven't changed up the display settings
+    for the about section, this is broken.
+    */
+    #about .PageIntro{
+        background-attachment: fixed;
+        /* background: none; */
+        padding-top: 30vh;
+        background-size: 20%;
+        margin:0;
+        width: 100%;
+        height: fit-content;
+
+    }
+    #aip{
+        margin-top: 20vw;
+        background-color: transparent;
+    }
+
+    #ContactForm form{
+        grid-template-rows: 1fr 1fr 3fr 3fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.33rem;
+        row-gap: 1.7rem;
+    }
+    input.entry{
+        height: 1.33rem;
+    }
+    input, textarea{
+        grid-column: 1;
+        margin-bottom: 0;
+    }
+    form div, label.label_title.form{
+        grid-column: 2;
+    }
+    #fname{
+        grid-row : 1;
+    }
+    .pronoun, #pronouns{
+        grid-row : 2;
+    }
+    .interest, #interest{
+        grid-row : 3;
+    }
+
+    .fmsg, #fmsg{
+        grid-row : 4;
+    }
+    #submit{
+        grid-row : 5;
+    }
+
+
+
+
+
+
+}
