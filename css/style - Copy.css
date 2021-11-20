@@ -453,7 +453,11 @@ li{
     #NavLogo{
         display: none;
     }
-
+    
+    blockquote{
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
 
     #mainBody{
         width: auto;
