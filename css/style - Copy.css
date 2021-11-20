@@ -167,6 +167,11 @@ nav>ul>li>a:active{
     text-indent: 2rem;
 }
 
+blockquote{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
 #hello{
     font-family: adobe-garamond-pro, serif;
     font-style: italic;
@@ -454,10 +459,7 @@ li{
         display: none;
     }
     
-    blockquote{
-        margin-left: 1rem;
-        margin-bottom: 1rem;
-    }
+
 
     #mainBody{
         width: auto;
